@@ -1,0 +1,20 @@
+{
+    "messager": {
+        "_type": "object",
+        "_class": "PubsubPublisher",
+        "_module": "xialib_pubsub",
+        "pub": {
+            "_type": "global",
+            "_name": "pubsub"
+        }
+    },
+    "control_topic_prefix": "insight-",
+    "control_topics": {
+        "cockpit": "insight-cockpit",
+        "cleaner": "insight-cleaner",
+        "merger": "insight-merger",
+        "packager": "insight-packager",
+        "loader": "insight-loader",
+        "backlog": "insight-backlog"
+    }
+}
