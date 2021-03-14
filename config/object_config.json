@@ -1,27 +1,14 @@
 {
-    "_module": "pyinsight",
-    "_class": "Cleaner",
     "depositor": {
         "_type": "object",
         "_class": "FirestoreDepositor",
-        "_module": "xialib_firestore",
         "db": {
             "_type": "global",
             "_name": "firestore"
-        }
+        },
+        "_module": "xialib_firestore"
     },
-    "archiver": {
-        "_type": "object",
-        "_class": "IoListArchiver",
-        "_module": "xialib",
-        "fs": {
-            "_type": "global",
-            "_name": "gcsstorer"
-        }
-    },
-    "_deploy": {
-        "name": "cloud-run-insight-cleaner",
-        "user": "insight-cleaner"
-    },
+    "_class": "Receiver",
+    "_module": "pyinsight",
     "_type": "object"
 }
